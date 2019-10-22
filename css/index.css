@@ -137,6 +137,7 @@ nav {
   margin: 0 auto;
   padding: 2% 0;
   left: 10%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
 @media (max-width: 500px) {
   nav {
@@ -174,6 +175,7 @@ footer {
   padding: 3%;
   background-color: #D3d3d3;
   margin: 0 auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
 @media (max-width: 500px) {
   footer {
@@ -186,7 +188,7 @@ footer {
 }
 html {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
 }
 body {
@@ -215,6 +217,7 @@ p {
   padding: 10%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
 @media (max-width: 500px) {
   .wrapper {
@@ -240,6 +243,7 @@ p {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
 @media (max-width: 500px) {
   .wrapper header {
@@ -336,4 +340,74 @@ p {
   color: #ffffff;
   border: 1px solid #10726A;
   transition: 0.3s;
+}
+.bioContent {
+  margin: 2% 0;
+  padding: 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bioContent .james,
+.bioContent .hugo,
+.bioContent .zeleke,
+.bioContent .kyle,
+.bioContent .cody {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .bioContent .james,
+  .bioContent .hugo,
+  .bioContent .zeleke,
+  .bioContent .kyle,
+  .bioContent .cody {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .bioContent .james,
+  .bioContent .zeleke,
+  .bioContent .cody {
+    flex-direction: column-reverse;
+  }
+}
+.bioContent .jamesImg,
+.bioContent .hugoBio,
+.bioContent .kyleBio,
+.bioContent .zelekeImg,
+.bioContent .codyImg {
+  width: 45%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .bioContent .jamesImg,
+  .bioContent .hugoBio,
+  .bioContent .kyleBio,
+  .bioContent .zelekeImg,
+  .bioContent .codyImg {
+    width: 100%;
+    padding: 0 0 5%s 0;
+  }
+}
+.bioContent .jamesBio,
+.bioContent .zelekeBio,
+.bioContent .codyBio,
+.bioContent .hugoImg,
+.bioContent .kyleImg {
+  width: 45%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .bioContent .jamesBio,
+  .bioContent .zelekeBio,
+  .bioContent .codyBio,
+  .bioContent .hugoImg,
+  .bioContent .kyleImg {
+    width: 100%;
+    padding: 0 0 5% 0;
+  }
 }
