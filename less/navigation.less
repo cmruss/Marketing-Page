@@ -1,5 +1,5 @@
 nav{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,10 +8,13 @@ nav{
     background-color: @nav-bg-color;
     margin: 0 auto;
     padding: 2% 0;
+    left: 10%;
 
     @media(@mobile){
+        width: 100%;
         flex-direction: column;
         justify-content: center;
+        left: 0;
     }
 
     .navBar{
