@@ -1,0 +1,48 @@
+.bioContent{
+    margin: 2% 0;
+    padding: 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .james, .hugo, .zeleke, .kyle, .cody{
+
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+        align-items: center;
+
+        @media(@mobile){
+            flex-direction: column;
+        }
+
+    }
+
+    .james, .zeleke, .cody{
+        @media(@mobile){
+            flex-direction: column-reverse;
+        }
+    }
+
+    .jamesImg, .hugoBio, .kyleBio, .zelekeImg, .codyImg{
+        width: 45%;
+        padding-left: 1%;
+        
+
+        @media(@mobile){
+            width: 100%;
+            padding: 0 0 5% 0;
+        }
+    }
+
+    .jamesBio, .zelekeBio, .codyBio, .hugoImg, .kyleImg{
+        width: 45%;
+        padding-right: 1%;
+        
+        @media(@mobile){
+            width: 100%;
+            padding: 0 0 5% 0;
+        }
+    }
+}

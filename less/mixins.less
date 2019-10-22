@@ -1,0 +1,32 @@
+.btn() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @font-color;
+    font-size: 2.5rem;
+    width: 25%;
+    height: 10vh;
+    margin: 5% auto;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @font-color;
+    a{
+        text-decoration: none;
+        color: @font-color;
+    }
+
+    @media(@mobile){
+        width: 100%;
+        background-color: @main-color;
+        border: 1px solid @main-color;
+        margin: 20% auto;
+    }
+   
+    &:hover{
+        background-color: @main-color;
+        color: @white;
+        border: 1px solid @bg-color; 
+        transition: 0.3s; 
+    }
+    
+}
