@@ -383,11 +383,17 @@ p {
     flex-direction: column;
   }
 }
+.bioContent .james,
+.bioContent .zeleke,
+.bioContent .cody {
+  padding-left: 3%;
+}
 @media (max-width: 500px) {
   .bioContent .james,
   .bioContent .zeleke,
   .bioContent .cody {
     flex-direction: column-reverse;
+    padding: 0 0;
   }
 }
 .bioContent .jamesImg,
