@@ -156,6 +156,9 @@ nav .navBar {
   nav .navBar {
     justify-content: space-evenly;
   }
+  nav .navBar h4 {
+    font-weight: bold;
+  }
 }
 nav .navBar a {
   font-size: 1.6rem;
@@ -237,7 +240,6 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .wrapper header img,
