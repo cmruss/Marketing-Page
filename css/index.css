@@ -146,6 +146,9 @@ nav {
     justify-content: center;
     left: 0;
   }
+  nav h4 {
+    font-weight: bold;
+  }
 }
 nav .navBar {
   width: 30%;
@@ -155,9 +158,6 @@ nav .navBar {
 @media (max-width: 500px) {
   nav .navBar {
     justify-content: space-evenly;
-  }
-  nav .navBar h4 {
-    font-weight: bold;
   }
 }
 nav .navBar a {
