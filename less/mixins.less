@@ -3,24 +3,37 @@
     justify-content: center;
     align-items: center;
     color: @font-color;
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 25%;
     height: 10vh;
     margin: 5% auto;
     background-color: @bg-color;
     color: @font-color;
     border: 1px solid @font-color;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.28);
     a{
         text-decoration: none;
         color: @font-color;
     }
 
-    @media(@mobile){
-        width: 100%;
+    @media(@tablet){
         background-color: @main-color;
         border: 1px solid @main-color;
-        margin: 20% auto;
-        
+        margin: 10% auto;
+        height: 5vh;
+        width: 30%;
+
+        a{
+            color: @nav-font-color;
+        }
+    }
+
+    @media(@mobile){
+        width: 50%;
+        background-color: @main-color;
+        border: 1px solid @main-color;
+        margin: 10% auto;
+
         a{
             color: @nav-font-color;
         }
