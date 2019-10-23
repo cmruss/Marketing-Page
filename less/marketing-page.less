@@ -44,18 +44,24 @@
     flex-direction: column;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.28);
 
+    @media(@tablet) {
+        width: 85%;
+    }
+
     @media(@mobile) {
         width: 95%;
     }
 
+
     header, section{
-        margin: 10% auto;
+        margin: 10% 0;
 
         @media(@mobile){
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin: 10% auto;
         }
     
       
@@ -84,6 +90,11 @@
             width: 40%;
             padding-right: 1%;
 
+            @media(@tablet){
+                width: 100%;
+                padding: 0 0;
+            }
+
             @media(@mobile){
                 width: 100%;
                 padding: 0 0;
@@ -93,6 +104,12 @@
         .contentImg{
             width: 40%;
             padding-left: 1%;
+
+            @media(@tablet){
+                width: 100%;
+                padding: 0 0;
+                margin-top: 10%;
+            }
             
             @media(@mobile){
                 width: 100%;
@@ -110,6 +127,10 @@
         justify-content: space-between;
         align-items: center;
 
+        @media(@tablet){
+            flex-direction: column-reverse;
+        }
+
         @media(@mobile){
             flex-direction: column-reverse;
         }
@@ -117,6 +138,11 @@
         .midContText{
             width: 40%;
             padding-right: 1%;
+
+            @media(@tablet){
+                width: 100%;
+                padding: 0 0;
+            }
 
             @media(@mobile){
                 width: 100%;
@@ -127,6 +153,12 @@
         .midContImg{
             width: 40%;
             padding-left: 1%;
+
+            @media(@tablet){
+                width: 100%;
+                padding: 0 0;
+                margin-top: 10%;
+            }
 
             @media(@mobile){
                 width: 100%;

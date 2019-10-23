@@ -13,14 +13,25 @@
         margin-bottom: 10%;
         align-items: center;
 
+        @media(@tablet){
+            flex-direction: column;
+            text-align: center;
+        }
+
         @media(@mobile){
             flex-direction: column;
         }
-
+    
     }
+
 
     .james, .zeleke, .cody{
         padding-left: 3%;
+
+        @media(@tablet){
+            flex-direction: column-reverse;
+            padding: 0 0;
+        }
 
         @media(@mobile){
             flex-direction: column-reverse;
@@ -32,6 +43,10 @@
         width: 45%;
         padding-left: 5%;
         
+        @media(@tablet){
+            width: 100%;
+            padding: 0 0 5% 0;
+        }
 
         @media(@mobile){
             width: 100%;
@@ -42,6 +57,11 @@
     .jamesBio, .zelekeBio, .codyBio, .hugoImg, .kyleImg{
         width: 45%;
         padding-right: 5%;
+
+        @media(@tablet){
+            width: 100%;
+            padding: 0 0 5% 0;
+        }
         
         @media(@mobile){
             width: 100%;
