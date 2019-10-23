@@ -129,13 +129,13 @@ table {
 nav {
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #ffffff;
   position: fixed;
   background-color: #183c56;
   margin: 0 auto;
-  padding: 2% 0;
+  padding: 2% 3%;
   left: 10%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
@@ -213,7 +213,7 @@ p {
   padding-bottom: 10px;
 }
 .wrapper {
-  background-color: #D3d3d3;
+  background-color: #ffffff;
   width: 75%;
   margin: 0 auto;
   padding: 10%;
@@ -327,7 +327,7 @@ p {
   width: 25%;
   height: 10vh;
   margin: 5% auto;
-  background-color: #D3d3d3;
+  background-color: #ffffff;
   color: #212529;
   border: 1px solid #212529;
 }
@@ -348,7 +348,7 @@ p {
 }
 .wrapper .btnContainer button:hover {
   background-color: #0B2027;
-  border: 1px solid #D3d3d3;
+  border: 1px solid #ffffff;
   transition: 0.3s;
 }
 .wrapper .btnContainer button:hover a {
