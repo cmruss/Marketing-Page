@@ -181,7 +181,6 @@ nav .navBar {
 @media (max-width: 500px) {
   nav .navBar {
     width: 50%;
-    display: flex;
     justify-content: space-around;
   }
 }
@@ -310,12 +309,6 @@ p {
     padding: 0 0;
   }
 }
-@media (max-width: 500px) {
-  .wrapper .content .contentText {
-    width: 100%;
-    padding: 0 0;
-  }
-}
 .wrapper .content .contentImg {
   width: 40%;
   padding-left: 1%;
@@ -329,8 +322,6 @@ p {
 }
 @media (max-width: 500px) {
   .wrapper .content .contentImg {
-    width: 100%;
-    padding: 0 0;
     margin-top: 15%;
   }
 }
@@ -347,22 +338,11 @@ p {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 500px) {
-  .wrapper .midContent {
-    flex-direction: column-reverse;
-  }
-}
 .wrapper .midContent .midContText {
   width: 40%;
   padding-right: 1%;
 }
 @media (max-width: 800px) {
-  .wrapper .midContent .midContText {
-    width: 100%;
-    padding: 0 0;
-  }
-}
-@media (max-width: 500px) {
   .wrapper .midContent .midContText {
     width: 100%;
     padding: 0 0;
@@ -381,8 +361,6 @@ p {
 }
 @media (max-width: 500px) {
   .wrapper .midContent .midContImg {
-    width: 100%;
-    padding: 0 0;
     margin-top: 15%;
   }
 }
@@ -412,8 +390,7 @@ p {
     background-color: #0B2027;
     border: 1px solid #0B2027;
     margin: 10% auto;
-    height: 5vh;
-    width: 30%;
+    width: 40%;
     color: #ffffff;
   }
   .wrapper .btnContainer button a {
@@ -423,14 +400,6 @@ p {
 @media (max-width: 500px) {
   .wrapper .btnContainer button {
     width: 50%;
-    background-color: #0B2027;
-    border: 1px solid #0B2027;
-    margin: 10% auto;
-    height: 10vh;
-    color: #ffffff;
-  }
-  .wrapper .btnContainer button a {
-    color: #ffffff;
   }
 }
 .wrapper .btnContainer button:hover {
@@ -469,29 +438,12 @@ p {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .bioContent .james,
-  .bioContent .hugo,
-  .bioContent .zeleke,
-  .bioContent .kyle,
-  .bioContent .cody {
-    flex-direction: column;
-  }
-}
 .bioContent .james,
 .bioContent .zeleke,
 .bioContent .cody {
   padding-left: 3%;
 }
 @media (max-width: 800px) {
-  .bioContent .james,
-  .bioContent .zeleke,
-  .bioContent .cody {
-    flex-direction: column-reverse;
-    padding: 0 0;
-  }
-}
-@media (max-width: 500px) {
   .bioContent .james,
   .bioContent .zeleke,
   .bioContent .cody {
@@ -508,16 +460,6 @@ p {
   padding-left: 5%;
 }
 @media (max-width: 800px) {
-  .bioContent .jamesImg,
-  .bioContent .hugoBio,
-  .bioContent .kyleBio,
-  .bioContent .zelekeImg,
-  .bioContent .codyImg {
-    width: 100%;
-    padding: 0 0 5% 0;
-  }
-}
-@media (max-width: 500px) {
   .bioContent .jamesImg,
   .bioContent .hugoBio,
   .bioContent .kyleBio,
@@ -545,16 +487,6 @@ p {
     padding: 0 0 5% 0;
   }
 }
-@media (max-width: 500px) {
-  .bioContent .jamesBio,
-  .bioContent .zelekeBio,
-  .bioContent .codyBio,
-  .bioContent .hugoImg,
-  .bioContent .kyleImg {
-    width: 100%;
-    padding: 0 0 5% 0;
-  }
-}
 form {
   display: flex;
   flex-direction: column;
@@ -565,12 +497,6 @@ form {
   font-size: 2rem;
 }
 @media (max-width: 800px) {
-  form {
-    width: 100%;
-    margin: 5% auto;
-  }
-}
-@media (max-width: 500px) {
   form {
     width: 100%;
     margin: 5% auto;
@@ -601,8 +527,7 @@ form input[type="reset"] a {
     background-color: #0B2027;
     border: 1px solid #0B2027;
     margin: 10% auto;
-    height: 5vh;
-    width: 30%;
+    width: 40%;
     color: #ffffff;
   }
   form input[type="reset"] a {
@@ -612,14 +537,6 @@ form input[type="reset"] a {
 @media (max-width: 500px) {
   form input[type="reset"] {
     width: 50%;
-    background-color: #0B2027;
-    border: 1px solid #0B2027;
-    margin: 10% auto;
-    height: 10vh;
-    color: #ffffff;
-  }
-  form input[type="reset"] a {
-    color: #ffffff;
   }
 }
 form input[type="reset"]:hover {
