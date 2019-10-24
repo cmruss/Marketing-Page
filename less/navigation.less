@@ -18,12 +18,15 @@ nav{
 
     @media(@mobile){
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
         left: 0;
+        justify-content: space around;
 
         h4{
             font-weight: bold;
+
+            @media(@mobile){
+                font-size: 1.6rem;
+            }
         }
     }
 
@@ -36,8 +39,9 @@ nav{
         }
 
         @media(@mobile) {
+            width: 50%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
         }
 
         a{
