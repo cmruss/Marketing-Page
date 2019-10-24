@@ -181,7 +181,6 @@ nav .navBar {
 @media (max-width: 500px) {
   nav .navBar {
     width: 50%;
-    display: flex;
     justify-content: space-around;
   }
 }
@@ -310,12 +309,6 @@ p {
     padding: 0 0;
   }
 }
-@media (max-width: 500px) {
-  .wrapper .content .contentText {
-    width: 100%;
-    padding: 0 0;
-  }
-}
 .wrapper .content .contentImg {
   width: 40%;
   padding-left: 1%;
@@ -329,8 +322,6 @@ p {
 }
 @media (max-width: 500px) {
   .wrapper .content .contentImg {
-    width: 100%;
-    padding: 0 0;
     margin-top: 15%;
   }
 }
@@ -347,22 +338,11 @@ p {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 500px) {
-  .wrapper .midContent {
-    flex-direction: column-reverse;
-  }
-}
 .wrapper .midContent .midContText {
   width: 40%;
   padding-right: 1%;
 }
 @media (max-width: 800px) {
-  .wrapper .midContent .midContText {
-    width: 100%;
-    padding: 0 0;
-  }
-}
-@media (max-width: 500px) {
   .wrapper .midContent .midContText {
     width: 100%;
     padding: 0 0;
@@ -381,8 +361,6 @@ p {
 }
 @media (max-width: 500px) {
   .wrapper .midContent .midContImg {
-    width: 100%;
-    padding: 0 0;
     margin-top: 15%;
   }
 }
@@ -412,8 +390,8 @@ p {
     background-color: #0B2027;
     border: 1px solid #0B2027;
     margin: 10% auto;
-    height: 5vh;
-    width: 30%;
+    width: 40%;
+    color: #ffffff;
   }
   .wrapper .btnContainer button a {
     color: #ffffff;
@@ -422,12 +400,6 @@ p {
 @media (max-width: 500px) {
   .wrapper .btnContainer button {
     width: 50%;
-    background-color: #0B2027;
-    border: 1px solid #0B2027;
-    margin: 10% auto;
-  }
-  .wrapper .btnContainer button a {
-    color: #ffffff;
   }
 }
 .wrapper .btnContainer button:hover {
@@ -466,29 +438,12 @@ p {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .bioContent .james,
-  .bioContent .hugo,
-  .bioContent .zeleke,
-  .bioContent .kyle,
-  .bioContent .cody {
-    flex-direction: column;
-  }
-}
 .bioContent .james,
 .bioContent .zeleke,
 .bioContent .cody {
   padding-left: 3%;
 }
 @media (max-width: 800px) {
-  .bioContent .james,
-  .bioContent .zeleke,
-  .bioContent .cody {
-    flex-direction: column-reverse;
-    padding: 0 0;
-  }
-}
-@media (max-width: 500px) {
   .bioContent .james,
   .bioContent .zeleke,
   .bioContent .cody {
@@ -505,16 +460,6 @@ p {
   padding-left: 5%;
 }
 @media (max-width: 800px) {
-  .bioContent .jamesImg,
-  .bioContent .hugoBio,
-  .bioContent .kyleBio,
-  .bioContent .zelekeImg,
-  .bioContent .codyImg {
-    width: 100%;
-    padding: 0 0 5% 0;
-  }
-}
-@media (max-width: 500px) {
   .bioContent .jamesImg,
   .bioContent .hugoBio,
   .bioContent .kyleBio,
@@ -542,16 +487,6 @@ p {
     padding: 0 0 5% 0;
   }
 }
-@media (max-width: 500px) {
-  .bioContent .jamesBio,
-  .bioContent .zelekeBio,
-  .bioContent .codyBio,
-  .bioContent .hugoImg,
-  .bioContent .kyleImg {
-    width: 100%;
-    padding: 0 0 5% 0;
-  }
-}
 form {
   display: flex;
   flex-direction: column;
@@ -567,12 +502,6 @@ form {
     margin: 5% auto;
   }
 }
-@media (max-width: 500px) {
-  form {
-    width: 100%;
-    margin: 5% auto;
-  }
-}
 form label {
   padding-top: 5%;
 }
@@ -581,35 +510,41 @@ form input[type="reset"] {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  width: 50%;
+  width: 25%;
   height: 10vh;
-  margin: 10% auto;
+  margin: 5% auto;
   background-color: #ffffff;
   color: #212529;
   border: 1px solid #212529;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
+form input[type="reset"] a {
+  text-decoration: none;
+  color: #212529;
+}
 @media (max-width: 800px) {
   form input[type="reset"] {
     background-color: #0B2027;
     border: 1px solid #0B2027;
+    margin: 10% auto;
+    width: 40%;
     color: #ffffff;
-    height: 5vh;
-    width: 30%;
-    margin: 20% auto;
+  }
+  form input[type="reset"] a {
+    color: #ffffff;
   }
 }
 @media (max-width: 500px) {
   form input[type="reset"] {
-    background-color: #0B2027;
-    border: 1px solid #0B2027;
-    color: #ffffff;
+    width: 50%;
   }
 }
 form input[type="reset"]:hover {
   background-color: #0B2027;
   border: 1px solid #ffffff;
   transition: 0.3s;
+}
+form input[type="reset"]:hover a {
   color: #ffffff;
 }
 form input[type=text],
