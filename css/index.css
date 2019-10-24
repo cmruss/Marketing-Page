@@ -126,6 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
 nav {
   width: 80%;
   display: flex;
@@ -158,11 +164,16 @@ nav {
 }
 nav .navBar {
   width: 30%;
-  display: flex;
-  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  nav .navBar {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 500px) {
   nav .navBar {
+    display: flex;
     justify-content: space-evenly;
   }
 }
@@ -556,7 +567,7 @@ form {
 form label {
   padding-top: 5%;
 }
-form input[type="button"] {
+form input[type="reset"] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,7 +581,7 @@ form input[type="button"] {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
 @media (max-width: 800px) {
-  form input[type="button"] {
+  form input[type="reset"] {
     background-color: #0B2027;
     border: 1px solid #0B2027;
     color: #ffffff;
@@ -580,13 +591,13 @@ form input[type="button"] {
   }
 }
 @media (max-width: 500px) {
-  form input[type="button"] {
+  form input[type="reset"] {
     background-color: #0B2027;
     border: 1px solid #0B2027;
     color: #ffffff;
   }
 }
-form input[type="button"]:hover {
+form input[type="reset"]:hover {
   background-color: #0B2027;
   border: 1px solid #ffffff;
   transition: 0.3s;

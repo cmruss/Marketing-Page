@@ -29,10 +29,14 @@ nav{
 
     .navBar{
         width: 30%;
-        display: flex;
-        justify-content: space-between;
+        
+        @media(@tablet) {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
         @media(@mobile) {
+            display: flex;
             justify-content: space-evenly;
         }
 
