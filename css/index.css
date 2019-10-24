@@ -155,12 +155,16 @@ nav {
 @media (max-width: 500px) {
   nav {
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
     left: 0;
+    justify-content: space around;
   }
   nav h4 {
     font-weight: bold;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  nav h4 {
+    font-size: 1.6rem;
   }
 }
 nav .navBar {
@@ -174,8 +178,9 @@ nav .navBar {
 }
 @media (max-width: 500px) {
   nav .navBar {
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 nav .navBar a {
