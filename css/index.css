@@ -170,6 +170,7 @@ nav h4 {
 }
 nav .navBar {
   width: 30%;
+  display: flex;
 }
 @media (max-width: 800px) {
   nav .navBar {
